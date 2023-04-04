@@ -38,7 +38,7 @@
         {
             "name": "solution.cc",
             "language": "cpp11",
-            "type": ""
+            "type": "MCS"
         }
     ],
     "generators": [
