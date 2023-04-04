@@ -36,11 +36,6 @@
     ],
     "solutions": [
         {
-            "name": "solution_runtime_error.cc",
-            "language": "cpp11",
-            "type": "AC/WA/TLE/MLE/FAIL"
-        },
-        {
             "name": "solution_tle.cc",
             "language": "cpp11",
             "type": "TLE/MLE/FAIL"
