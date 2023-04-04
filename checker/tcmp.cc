@@ -1,46 +1,29 @@
-#include <iostream>
-#include <sstream>
-#include <vector>
-#include <string>
-
-#define SUCCESS 0
-#define WRONG_ANSWER 40
-
-int main() {
-    std::vector < std::string > lcpu, lans, cpu, ans;
-
-    auto rn_read = [](std::vector < std::string >& v) -> void {
-        std::string s;
-        std::getline(std::cin, s, '\n');
-        int line = std::stoi(s);
-
-        for (int i = 0; i < line; ++i) {
-            std::getline(std::cin, s, '\n');
-            v.push_back(s);
-        }
-    };
-
-    auto rn_tokenizer = [](std::vector < std::string >& v, std::vector < std::string >& w) -> void {
-        for (auto& s : v) {
-            std::stringstream ss(s);
-            std::string t;
-            for (; ss >> t; ) {
-                if (t.size() == 0) break;
-                w.push_back(t);
-            }
-        }
-    };
-
-    rn_read(lcpu); rn_tokenizer(lcpu, cpu);
-    rn_read(lans); rn_tokenizer(lans, ans);
-
-    if (cpu.size() != ans.size()) {
-        return WRONG_ANSWER;
+#include "testlib.h"
+ 
+using namespace std;
+ 
+int main(int argc, char** argv) {
+    setName("token compare");
+    registerTestlibCmd(argc, argv);
+ 
+    int n = 0;
+    string j, p;
+ 
+    for (; !ans.seekEof() && !ouf.seekEof(); ) {
+        ++n;
+ 
+        ans.readWordTo(j);
+        ouf.readWordTo(p);
+        
+        if (j != p) quitf(_wa, "%d%s words differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(j).c_str(), compress(p).c_str());
     }
-    for (int i = 0; i < cpu.size(); ++i) {
-        if (cpu[i] != ans[i]) {
-            return WRONG_ANSWER;
-        }
+ 
+    if (ans.seekEof() && ouf.seekEof()) {
+        if (n == 1) quitf(_ok, "\"%s\"", compress(j).c_str());
+        else quitf(_ok, "%d tokens", n);
     }
-    return SUCCESS;
+    else {
+        if (ans.seekEof()) quitf(_wa, "Participant output contains extra tokens");
+        else quitf(_wa, "Unexpected EOF in the participants output");
+    }
 }
