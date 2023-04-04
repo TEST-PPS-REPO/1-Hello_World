@@ -6,7 +6,7 @@ using namespace std;
 char buf[101010];
  
 int main(int argc, char** argv) {
-    registerTestlib(argc, argv);
+    registerTestlibCmd(argc, argv);
     return 4;
     puts(argv[0]);
     puts(argv[1]);
