@@ -36,11 +36,6 @@
     ],
     "solutions": [
         {
-            "name": "solution.cc",
-            "language": "cpp11",
-            "type": "AC"
-        },
-        {
             "name": "solution.py",
             "language": "py3",
             "type": "AC"
