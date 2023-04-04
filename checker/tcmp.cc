@@ -3,6 +3,7 @@
 using namespace std;
  
 int main(int argc, char** argv) {
+    puts("SDF");
     setName("token compare");
     registerTestlibCmd(argc, argv);
  
