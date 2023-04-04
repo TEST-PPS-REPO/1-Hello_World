@@ -39,6 +39,11 @@
             "name": "solution.cc",
             "language": "cpp11",
             "type": "MCS"
+        },
+        {
+            "name": "solution.py",
+            "language": "",
+            "type": ""
         }
     ],
     "generators": [
