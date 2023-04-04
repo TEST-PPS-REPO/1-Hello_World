@@ -6,7 +6,7 @@ using namespace std;
 char buf[101010];
  
 int main(int argc, char** argv) {
-    exit(3);
+    std::exit(3);
     puts(argv[0]);
     puts(argv[1]);
     puts(argv[2]);
