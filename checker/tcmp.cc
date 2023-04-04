@@ -1,10 +1,11 @@
-#include "testlib.h"
+// #include "testlib.h"
  
 using namespace std;
 
 char buf[101010];
  
 int main(int argc, char** argv) {
+    exit(3);
     puts(argv[0]);
     puts(argv[1]);
     puts(argv[2]);
@@ -31,9 +32,9 @@ int main(int argc, char** argv) {
 
     fclose(ans);
     
-    setName("token compare");
-    registerTestlibCmd(argc, argv);
+    // setName("token compare");
+    // registerTestlibCmd(argc, argv);
 
-    quitf(_ok, "ok");
+    // quitf(_ok, "ok");
     return 0;
 }
