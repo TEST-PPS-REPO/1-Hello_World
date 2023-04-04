@@ -11,7 +11,7 @@ int main(int argc, char** argv) {
          string j;
         ouf.readWordTo(j);
     }
-    quitf(_ok, "ok");
+    quitf(_pe, "ok");
     std::exit(-4);
     // return 4;
     puts(argv[0]);
