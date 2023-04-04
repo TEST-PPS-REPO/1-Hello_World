@@ -1,4 +1,4 @@
-// #include "testlib.h"
+#include "testlib.h"
 #include <cstdlib>
 #include <cstdio>
 using namespace std;
