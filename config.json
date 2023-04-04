@@ -48,7 +48,7 @@
         {
             "name": "solution_wa.cc",
             "language": "cpp11",
-            "type": "AC"
+            "type": "AC/WA"
         }
     ],
     "generators": [
