@@ -36,11 +36,6 @@
     ],
     "solutions": [
         {
-            "name": "solution.py",
-            "language": "py3",
-            "type": "AC"
-        },
-        {
             "name": "solution_heuristic.cc",
             "language": "cpp11",
             "type": "AC/WA"
