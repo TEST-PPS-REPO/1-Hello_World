@@ -44,6 +44,11 @@
             "name": "solution.py",
             "language": "",
             "type": ""
+        },
+        {
+            "name": "solution_wa.cc",
+            "language": "",
+            "type": ""
         }
     ],
     "generators": [
