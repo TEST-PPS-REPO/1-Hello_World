@@ -8,7 +8,7 @@ char buf[101010];
 int main(int argc, char** argv) {
     registerTestlibCmd(argc, argv);
     for (; !ouf.seekEof(); ) {
- 
+         string j;
         ouf.readWordTo(j);
     }
     quitf(_ok, "ok");
