@@ -1,6 +1,6 @@
 // #include "testlib.h"
 #include <cstdlib>
-#include <cstdid>
+#include <cstdio>
 using namespace std;
 
 char buf[101010];
