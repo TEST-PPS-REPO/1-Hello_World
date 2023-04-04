@@ -47,7 +47,7 @@
         },
         {
             "name": "solution_wa.cc",
-            "language": "",
+            "language": "cpp11",
             "type": ""
         }
     ],
