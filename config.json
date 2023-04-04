@@ -34,7 +34,13 @@
             "label": "English"
         }
     ],
-    "solutions": [],
+    "solutions": [
+        {
+            "name": "solution.cc",
+            "language": "",
+            "type": ""
+        }
+    ],
     "generators": [
         {
             "name": "generator.py",
