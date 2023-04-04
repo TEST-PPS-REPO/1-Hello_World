@@ -37,7 +37,7 @@
     "solutions": [
         {
             "name": "solution.cc",
-            "language": "",
+            "language": "cpp11",
             "type": ""
         }
     ],
