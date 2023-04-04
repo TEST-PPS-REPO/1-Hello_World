@@ -43,7 +43,7 @@
         {
             "name": "solution.py",
             "language": "py3",
-            "type": ""
+            "type": "AC"
         },
         {
             "name": "solution_wa.cc",
