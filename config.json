@@ -34,13 +34,7 @@
             "label": "English"
         }
     ],
-    "solutions": [
-        {
-            "name": "solution_wa.cc",
-            "language": "cpp11",
-            "type": "WA"
-        }
-    ],
+    "solutions": [],
     "generators": [
         {
             "name": "generator.py",
