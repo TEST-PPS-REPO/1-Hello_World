@@ -6,10 +6,12 @@ using namespace std;
 char buf[101010];
  
 int main(int argc, char** argv) {
-    puts("ASDF");
     registerTestlibCmd(argc, argv);
-    puts("SDF");
-    quitf(_pe, "ok");
+    for (; !ouf.seekEof(); ) {
+ 
+        ouf.readWordTo(j);
+    }
+    quitf(_ok, "ok");
     std::exit(-4);
     // return 4;
     puts(argv[0]);
