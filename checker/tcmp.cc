@@ -1,5 +1,6 @@
 // #include "testlib.h"
- 
+#include <cstdlib>
+#include <cstdid>
 using namespace std;
 
 char buf[101010];
