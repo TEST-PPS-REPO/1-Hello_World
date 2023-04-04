@@ -36,11 +36,6 @@
     ],
     "solutions": [
         {
-            "name": "solution_mcs.cc",
-            "language": "cpp11",
-            "type": "MCS"
-        },
-        {
             "name": "solution_mle.cc",
             "language": "cpp11",
             "type": "TLE/MLE/FAIL"
