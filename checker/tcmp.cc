@@ -7,7 +7,8 @@ char buf[101010];
  
 int main(int argc, char** argv) {
     registerTestlibCmd(argc, argv);
-    return 4;
+    std::exit(-4);
+    // return 4;
     puts(argv[0]);
     puts(argv[1]);
     puts(argv[2]);
