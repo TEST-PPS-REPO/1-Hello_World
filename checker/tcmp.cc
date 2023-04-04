@@ -6,7 +6,9 @@ using namespace std;
 char buf[101010];
  
 int main(int argc, char** argv) {
+    puts("ASDF");
     registerTestlibCmd(argc, argv);
+    puts("SDF");
     quitf(_pe, "ok");
     std::exit(-4);
     // return 4;
