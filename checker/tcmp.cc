@@ -1,48 +1,29 @@
 #include "testlib.h"
-#include <cstdlib>
-#include <cstdio>
+ 
 using namespace std;
-
-char buf[101010];
  
 int main(int argc, char** argv) {
+    setName("token compare");
     registerTestlibCmd(argc, argv);
-    for (; !ouf.seekEof(); ) {
-         string j;
-        ouf.readWordTo(j);
+ 
+    int n = 0;
+    string j, p;
+ 
+    for (; !ans.seekEof() && !ouf.seekEof(); ) {
+        ++n;
+ 
+        ans.readWordTo(j);
+        ouf.readWordTo(p);
+        
+        if (j != p) quitf(_wa, "%d%s words differ - expected: '%s', found: '%s'", n, englishEnding(n).c_str(), compress(j).c_str(), compress(p).c_str());
     }
-    quitf(_ok, "ok");
-    std::exit(-4);
-    // return 4;
-    puts(argv[0]);
-    puts(argv[1]);
-    puts(argv[2]);
-    puts(argv[3]);
-
-    FILE* in = fopen(argv[1], "r");
-    
-    fscanf(in, "%s", buf);
-    printf("in: %s\n", buf);
-
-    fclose(in);
-
-    FILE* out = fopen(argv[2], "r");
-    
-    fscanf(out, "%s", buf);
-    printf("out: %s\n", buf);
-
-    fclose(out);
-
-    FILE* ans = fopen(argv[3], "r");
-    
-    fscanf(ans, "%s", buf);
-    printf("ans: %s\n", buf);
-
-    fclose(ans);
-    
-    // setName("token compare");
-    // registerTestlibCmd(argc, argv);
-
-    // quitf(_ok, "ok");
-    return 0;
+ 
+    if (ans.seekEof() && ouf.seekEof()) {
+        if (n == 1) quitf(_ok, "\"%s\"", compress(j).c_str());
+        else quitf(_ok, "%d tokens", n);
+    }
+    else {
+        if (ans.seekEof()) quitf(_wa, "Participant output contains extra tokens");
+        else quitf(_wa, "Unexpected EOF in the participants output");
+    }
 }
